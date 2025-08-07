@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #337CA0;
+    font-family: 'Aleo', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 5px;
+}
+
+nav a {
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    color: #011C27;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.burger {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.burger a {
+    color: #011C27;
+    padding: 8px;
+}
+
+.burger a:hover {
+    background-color: rgb(0, 183, 219);
+    color: #011C27;
+}
+
+@media (max-width: 840px) {
+    .burger {
+        display: none;
+        width: 100%;
+    }
+
+    .burger.open {
+        display: block;
+    }
+
+    .hamburger::before {
+        content: "☰";
+    }
+
+    .hamburger.open::before {
+        content: "✖";
+    }
+
+    .hamburger {
+        display: block;
+        background: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .hamburger.open {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+footer {
+    background-color: #337CA0;
+    color: #011C27;
+    text-align: center;
+    padding: 1em;
+}
