@@ -1,3 +1,4 @@
+/* Base Format */
 * {
     margin: 0;
     padding: 0;
@@ -56,14 +57,31 @@ nav ul {
     color: #011C27;
 }
 
+.hamburger {
+    display: none;
+}
+
 @media (max-width: 840px) {
     .burger {
         display: none;
+        flex-direction: column;
         width: 100%;
+        text-align: center;
+        background-color: #337CA0;
     }
 
     .burger.open {
+        display: flex;
+    }
+
+    .hamburger {
         display: block;
+        font-size: 30px;
+        padding: 10px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
     }
 
     .hamburger::before {
@@ -73,29 +91,173 @@ nav ul {
     .hamburger.open::before {
         content: "✖";
     }
-
-    .hamburger {
-        display: block;
-        background: none;
-        color: white;
-        cursor: pointer;
-    }
-
-    .hamburger.open {
-        display: block;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-    }
 }
 
 footer {
     background-color: #337CA0;
-    color: #011C27;
+    color: black;
     text-align: center;
     padding: 1em;
+    font-family: 'Aleo', sans-serif;
 }
+
+/* Base Format */
+
+/* index.html */
+
+.call-to-action h2 {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.call-to-action p {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.desc-for-activities {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    display: block;
+    text-decoration: none;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 200px;
+    text-align: center;
+    color: #011C27;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+}
+
+.card h3 {
+    padding: 10px;
+    color: #011C27;
+}
+
+.card:hover {
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sign-up-form {
+    max-width: 300px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.sign-up-form h2 {
+    text-align: center;
+    font-family: 'Aleo', serif;
+}
+
+.sign-up-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.sign-up-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.sign-up-form button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background: #6D5A72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign-up-form button:hover {
+    background: #443847;
+}
+
+/* index.html */
+
+/* calc-and-recos.html */
+
+.calc-and-recos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+#bmiForm, #intakeForm, #recommendForm {
+    background: white;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    max-width: 400px;
+}
+
+#bmiForm label, #intakeForm label, #recommendForm label {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: 600;
+    color: #011C27;
+}
+
+#bmiForm input, #intakeForm input, #recommendForm input,#intakeForm select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    background-color: white;
+    transition: border-color 0.3s;
+}
+
+#bmiForm input:focus, #intakeForm input:focus, #recommendForm input:focus, #intakeForm select:focus {
+    border-color: #337CA0;
+    outline: none;
+}
+
+#bmiForm button, #intakeForm button, #recommendForm button {
+    display: block;
+    margin: 0 auto;
+    background-color: #337CA0;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#bmiForm button:hover, #intakeForm button:hover, #recommendForm button:hover {
+    background-color: #285e78;
+}
+
+#bmiResult, #intakeResult, #recommendResult {
+    margin-top: 10px;
+    padding: 20px;
+    color: #011C27;
+}
+
+/* calc-and-recos.html */

@@ -14,24 +14,62 @@
 
     <header>
         <h1>Plan Your Workout</h1>
-        <button class="hamburger" aria-label="Burger for navigating"></button>
-        <nav>
-            <ul class="burger">
-                <li><a href="#">Home</a></li>
-                <li><a href="calc-and-recos.html">BMI Calculator & Recommendations</a></li>
-                <li><a href="goals.html">Goals</a></li>
-                <li><a href="#">Sign Up</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
         <div class="call-to-action">
-
+            <h2>Do you want to make your exercise sessions more fun? Do you feel like you're not making enough progress?
+                Join "Plan Your Workout" today!</h2>
+            <p>Plan Your Workout contains your every need with starting your exercise journey.
+                It contains a BMI Calculator, the ability to view your Intake Recommendation, and a way to set up goals for yourself during your workouts.
+                Starting is easy but continuing is the hardest part so be strong and join us to make your life easier!</p>
+        </div>
+        <div class="desc-for-activities">
+            <a href="calc-and-recos.html" class="card">
+                <img src="images/calculator.svg" alt="Calculator Button">
+                <h3>BMI Calculator & Recommendations</h3>
+                <p>Wanna know your BMI and find out what you should eat? Use this calculator and the recommendations as a guideline!</p>
+            </a>
+            <a href="goals.html" class="card">
+                <img src="images/goals.svg" alt="Your Goals Button">
+                <h3>Your Goals</h3>
+                <p>Wanna set up goals for yourself that you can always go back to? Set up your goals here and visit your account afterward!</p>
+            </a>
+            <a href="account.html" class="card">
+                <img src="images/user.svg" alt="Account Button">
+                <h3>Your Account</h3>
+                <p>The place where you can see your hard work through your goals and desires.</p>
+            </a>
+        </div>
+        <div class="sign-up-form">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            
+                <button type="submit">Sign Up</button>
+                <p id="signupMessage"></p>
+            </form>
         </div>
     </main>
 
     <footer>
+        <button class="hamburger" aria-label="Burger for navigating"></button>
+        <nav>
+            <ul class="burger">
+                <li><a href="#">Home</a></li>
+                <li><a href="exercises.html">Exercises</a></li>
+                <li><a href="calc-and-recos.html">BMI Calculator & Recommendations</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
         <p>© 2025 Plan Your Workout</p>
     </footer>
 </body>
