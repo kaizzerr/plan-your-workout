@@ -24,12 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem("email", email);
             localStorage.setItem("password", password);
             signupMessage.textContent = "Sign-up successful!";
-            signupMessage.style.color = "green";
 
             signupForm.reset();
         } else {
             signupMessage.textContent = "Please fill in all fields.";
-            signupMessage.style.color = "red";
         }
     });
 });
