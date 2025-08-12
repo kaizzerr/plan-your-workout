@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Your Workout Exercises | WDD330 Final Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/exercises.js"></script>
+    <link rel="icon" href="images/dumbbell-icon.jpg">
+</head>
+
+<body>
+
+    <header>
+        <h1>Plan Your Workout: Exercises</h1>
+    </header>
+
+    <main>
+        <div class="exercises">
+            <form id="targetForm">
+                <label for="target">Select Preferred Target Muscle:</label>
+                <select id="target" name="target">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="abductors">Abductors</option>
+                    <option value="abs">Abs</option>
+                    <option value="adductors">Adductors</option>
+                    <option value="biceps">Biceps</option>
+                    <option value="calves">Calves</option>
+                    <option value="cardiovascular system">Cardiovascular System</option>
+                    <option value="delts">Delts</option>
+                    <option value="forearms">Forearms</option>
+                    <option value="glutes">Glutes</option>
+                    <option value="hamstrings">Hamstrings</option>
+                    <option value="lats">Lats</option>
+                    <option value="levator scapulae">Levator Scapulae</option>
+                    <option value="pectorals">Pectorals</option>
+                    <option value="quads">Quads</option>
+                    <option value="serratus anterior">Serratus Anterior</option>
+                    <option value="spine">Spine</option>
+                    <option value="traps">Traps</option>
+                    <option value="triceps">Triceps</option>
+                    <option value="upper back">Upper Back</option>
+                </select>
+                <button type="submit">View Your Exercise Methods</button>
+            </form>
+                <div id="targetExercises"></div>
+            <form id="equipmentForm">
+                <label for="equipment">Select Preferred Equipment:</label>
+                <select id="equipment" name="equipment">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="assisted">Assisted</option>
+                    <option value="band">Band</option>
+                    <option value="barbell">Barbell</option>
+                    <option value="body weight">Body Weight</option>
+                    <option value="bosu ball">Bosu Ball</option>
+                    <option value="cable">Cable</option>
+                    <option value="dumbbell">Dumbbell</option>
+                    <option value="elliptical machine">Elliptical Machine</option>
+                    <option value="ez barbell">EZ Barbell</option>
+                    <option value="hammer">Hammer</option>
+                    <option value="kettlebell">Kettlebell</option>
+                    <option value="leverage machine">Leverage Machine</option>
+                    <option value="medicine ball">Medicine Ball</option>
+                    <option value="olympic barbell">Olympic Barbell</option>
+                    <option value="resistance band">Resistance Band</option>
+                    <option value="roller">Roller</option>
+                    <option value="rope">Rope</option>
+                    <option value="skierg machine">Skierg Machine</option>
+                    <option value="sled machine">Sled Machine</option>
+                    <option value="smith machine">Smith Machine</option>
+                    <option value="stability ball">Stability Ball</option>
+                    <option value="stationary bike">Stationary Bike</option>
+                    <option value="stepmill machine">Stepmill Machine</option>
+                    <option value="tire">Tire</option>
+                    <option value="trap bar">Trap Bar</option>
+                    <option value="upper body ergometer">Upper Body Ergometer</option>
+                    <option value="weighted">Weighted</option>
+                    <option value="wheel roller">Wheel Roller</option>
+                </select>
+                <button type="submit">View Your Exercise Methods</button>
+            </form>
+                <div id="equipmentExercises"></div>
+            <form id="bodyPartForm">
+                <label for="bodyPart">Select Preferred Body Part:</label>
+                <select id="bodyPart" name="bodyPart">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="back">Back</option>
+                    <option value="cardio">Cardio</option>
+                    <option value="chest">Chest</option>
+                    <option value="lower arms">Lower Arms</option>
+                    <option value="lower legs">Lower Legs</option>
+                    <option value="neck">Neck</option>
+                    <option value="shoulders">Shoulders</option>
+                    <option value="upper arms">Upper Arms</option>
+                    <option value="upper legs">Upper Legs</option>
+                    <option value="waist">Waist</option>
+                </select>
+                <button type="submit">View Your Exercise Methods</button>
+            </form>
+            <div id="bodyPartExercises"></div>
+        </div>
+    </main>
+
+    <footer>
+        <button class="hamburger" aria-label="Burger for navigating"></button>
+        <nav>
+            <ul class="burger">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Exercises</a></li>
+                <li><a href="calc-and-recos.html">BMI Calculator & Recommendations</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="login.html">Log-In</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <p>© 2025 Plan Your Workout</p>
+    </footer>
+</body>
+
+</html>

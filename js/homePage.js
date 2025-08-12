@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem("username", username);
             localStorage.setItem("email", email);
             localStorage.setItem("password", password);
-            signupMessage.textContent = "Sign-up successful!";
+            signupMessage.textContent = "Sign-up successful";
 
             signupForm.reset();
         } else {
-            signupMessage.textContent = "Please fill in all fields.";
+            signupMessage.textContent = "Please fill in all fields";
         }
     });
 });

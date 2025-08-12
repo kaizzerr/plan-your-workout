@@ -42,7 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const data = await res.json();
     document.getElementById("intakeResult").innerHTML =
-      `<p>Daily Calorie Intake: ${data.calories} kcal</p>`;
+      `<p>Daily Calorie Intake: ${data.dailyCalories} kcal</p>
+      <p>Protein: ${data.protein} g</p>
+      <p>Carbs: ${data.carbs} g</p>
+      <p>Fat: ${data.fat} g</p>`;
   });
 
   document.getElementById("recommendForm").addEventListener("submit", async (e) => {
