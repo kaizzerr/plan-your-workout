@@ -27,3 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.querySelector('.hamburger');
+  const burger = document.querySelector('.burger');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    burger.classList.toggle('open');
+  });
+});

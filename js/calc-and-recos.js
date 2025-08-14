@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const data = await res.json();
     document.getElementById("bmiResult").innerHTML =
-      `<p>Your BMI is ${data.bmi} which is (${data.category})</p>`;
+      `<p>Your BMI is ${data.bmi} which is ${data.category}</p>`;
   });
 
   document.getElementById("intakeForm").addEventListener("submit", async (e) => {
@@ -65,5 +65,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const data = await res.json();
     document.getElementById("recommendResult").innerHTML =
       `<p>Recommendation for you: ${data.recommendation}</p>`;
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.querySelector('.hamburger');
+  const burger = document.querySelector('.burger');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    burger.classList.toggle('open');
   });
 });
